@@ -1,0 +1,107 @@
+2025-06-26T04:02:55.064520981Z ==> Cloning from https://github.com/beruus2003/barbearia
+2025-06-26T04:02:55.605787614Z ==> Checking out commit 38a20cded254bdb3528c835a9d5917a2f32a4824 in branch main
+2025-06-26T04:03:01.697212153Z ==> Using Node.js version 22.16.0 (default)
+2025-06-26T04:03:01.732294965Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2025-06-26T04:03:03.88378448Z ==> Using Bun version 1.1.0 (default)
+2025-06-26T04:03:03.883808801Z ==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+2025-06-26T04:03:03.978935537Z ==> Running build command 'npm install && npm run build'...
+2025-06-26T04:04:13.778622428Z 
+2025-06-26T04:04:13.778649649Z added 550 packages, and audited 551 packages in 1m
+2025-06-26T04:04:13.778662589Z 
+2025-06-26T04:04:13.77868123Z 76 packages are looking for funding
+2025-06-26T04:04:13.77868882Z   run `npm fund` for details
+2025-06-26T04:04:13.799668859Z 
+2025-06-26T04:04:13.799688059Z 5 moderate severity vulnerabilities
+2025-06-26T04:04:13.799692279Z 
+2025-06-26T04:04:13.79969672Z To address all issues (including breaking changes), run:
+2025-06-26T04:04:13.79970096Z   npm audit fix --force
+2025-06-26T04:04:13.79970428Z 
+2025-06-26T04:04:13.79970834Z Run `npm audit` for details.
+2025-06-26T04:04:13.993473563Z 
+2025-06-26T04:04:13.993495903Z > barbershop-management@1.0.0 build
+2025-06-26T04:04:13.993500183Z > vite build && node build-server.js
+2025-06-26T04:04:13.993503824Z 
+2025-06-26T04:04:14.178288009Z vite v5.4.19 building for production...
+2025-06-26T04:04:14.228197014Z transforming...
+2025-06-26T04:04:18.042120473Z ✓ 2601 modules transformed.
+2025-06-26T04:04:18.341277235Z rendering chunks...
+2025-06-26T04:04:18.350712924Z computing gzip size...
+2025-06-26T04:04:18.366868875Z ../dist/public/index.html                   0.63 kB │ gzip:   0.38 kB
+2025-06-26T04:04:18.366891676Z ../dist/public/assets/logo-CR-t3sBv.png   649.06 kB
+2025-06-26T04:04:18.367007549Z ../dist/public/assets/index-BsHnxXJ8.css   70.05 kB │ gzip:  12.14 kB
+2025-06-26T04:04:18.367111312Z ../dist/public/assets/index-CGCrTZDE.js   618.22 kB │ gzip: 180.39 kB
+2025-06-26T04:04:18.367259716Z 
+2025-06-26T04:04:18.367267747Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2025-06-26T04:04:18.367271787Z - Using dynamic import() to code-split the application
+2025-06-26T04:04:18.367275847Z - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-06-26T04:04:18.367279597Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-06-26T04:04:18.367449952Z ✓ built in 4.17s
+2025-06-26T04:04:18.476332831Z ✓ Server build completed
+2025-06-26T04:04:19.21739929Z ==> Uploading build...
+2025-06-26T04:04:27.568116829Z ==> Uploaded in 5.4s. Compression took 2.9s
+2025-06-26T04:04:27.599457154Z ==> Build successful 🎉
+2025-06-26T04:04:29.854925308Z ==> Deploying...
+2025-06-26T04:04:53.65352697Z ==> Running 'npm start'
+2025-06-26T04:04:54.554198637Z 
+2025-06-26T04:04:54.554243438Z > barbershop-management@1.0.0 start
+2025-06-26T04:04:54.554250278Z > NODE_ENV=production node dist/index.js
+2025-06-26T04:04:54.554252839Z 
+2025-06-26T04:05:02.556835495Z Erro ao inicializar dados: TypeError: Invalid URL
+2025-06-26T04:05:02.556852036Z     at new URL (node:internal/url:818:25)
+2025-06-26T04:05:02.556855005Z     at Object.parse (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:841:225)
+2025-06-26T04:05:02.556858096Z     at parse (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:848:1)
+2025-06-26T04:05:02.556860496Z     at new ConnectionParameters (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:869:23)
+2025-06-26T04:05:02.556862376Z     at new Client (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1226:35)
+2025-06-26T04:05:02.556864046Z     at new NeonClient (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1570:121)
+2025-06-26T04:05:02.556865686Z     at Cn.newClient (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1378:74)
+2025-06-26T04:05:02.556867386Z     at Cn.connect (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1378:23)
+2025-06-26T04:05:02.556869036Z     at Cn.query (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1407:63)
+2025-06-26T04:05:02.556870786Z     at Cn.query (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1623:14) {
+2025-06-26T04:05:02.556873146Z   code: 'ERR_INVALID_URL',
+2025-06-26T04:05:02.556876236Z   input: "psql%20'postgresql://neondb_owner:npg_IqP5Diho0bwA@ep-soft-fog-acg92hte-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'"
+2025-06-26T04:05:02.556879166Z }
+2025-06-26T04:05:02.557532973Z file:///opt/render/project/src/dist/index.js:1503
+2025-06-26T04:05:02.557537643Z       "@": path.resolve(__dirname, "client", "src"),
+2025-06-26T04:05:02.557539883Z                         ^
+2025-06-26T04:05:02.557541783Z 
+2025-06-26T04:05:02.557543913Z ReferenceError: __dirname is not defined in ES module scope
+2025-06-26T04:05:02.557549073Z This file is being treated as an ES module because it has a '.js' file extension and '/opt/render/project/src/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+2025-06-26T04:05:02.557552783Z     at file:///opt/render/project/src/dist/index.js:1503:25
+2025-06-26T04:05:02.557556774Z     at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+2025-06-26T04:05:02.557561414Z     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+2025-06-26T04:05:02.557564624Z     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-06-26T04:05:02.557567744Z 
+2025-06-26T04:05:02.557571304Z Node.js v22.16.0
+2025-06-26T04:05:04.185242417Z ==> Exited with status 1
+2025-06-26T04:05:04.203362435Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2025-06-26T04:05:10.152947629Z ==> Running 'npm start'
+2025-06-26T04:05:11.225468403Z 
+2025-06-26T04:05:11.225503684Z > barbershop-management@1.0.0 start
+2025-06-26T04:05:11.225509454Z > NODE_ENV=production node dist/index.js
+2025-06-26T04:05:11.225512904Z 
+2025-06-26T04:05:20.04091602Z file:///opt/render/project/src/dist/index.js:1503
+2025-06-26T04:05:20.040934821Z       "@": path.resolve(__dirname, "client", "src"),
+2025-06-26T04:05:20.040940251Z                         ^
+2025-06-26T04:05:20.040944231Z 
+2025-06-26T04:05:20.040948581Z ReferenceError: __dirname is not defined in ES module scope
+2025-06-26T04:05:20.040953591Z This file is being treated as an ES module because it has a '.js' file extension and '/opt/render/project/src/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+2025-06-26T04:05:20.040960101Z     at file:///opt/render/project/src/dist/index.js:1503:25
+2025-06-26T04:05:20.040964851Z     at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+2025-06-26T04:05:20.040969381Z     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+2025-06-26T04:05:20.040973571Z     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-06-26T04:05:20.040990862Z Erro ao inicializar dados: TypeError: Invalid URL
+2025-06-26T04:05:20.040996432Z     at new URL (node:internal/url:818:25)
+2025-06-26T04:05:20.041001482Z     at Object.parse (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:841:225)
+2025-06-26T04:05:20.041006702Z     at parse (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:848:1)
+2025-06-26T04:05:20.041011452Z     at new ConnectionParameters (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:869:23)
+2025-06-26T04:05:20.041015823Z     at new Client (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1226:35)
+2025-06-26T04:05:20.041019963Z     at new NeonClient (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1570:121)
+2025-06-26T04:05:20.041024163Z     at Cn.newClient (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1378:74)
+2025-06-26T04:05:20.041028283Z     at Cn.connect (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1378:23)
+2025-06-26T04:05:20.041032513Z     at Cn.query (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1407:63)
+2025-06-26T04:05:20.041036793Z     at Cn.query (file:///opt/render/project/src/node_modules/@neondatabase/serverless/index.mjs:1623:14) {
+2025-06-26T04:05:20.041041333Z   code: 'ERR_INVALID_URL',
+2025-06-26T04:05:20.041045853Z   input: "psql%20'postgresql://neondb_owner:npg_IqP5Diho0bwA@ep-soft-fog-acg92hte-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'"
+2025-06-26T04:05:20.041049953Z }
+2025-06-26T04:05:20.124843732Z 
+2025-06-26T04:05:20.124863803Z Node.js v22.16.0

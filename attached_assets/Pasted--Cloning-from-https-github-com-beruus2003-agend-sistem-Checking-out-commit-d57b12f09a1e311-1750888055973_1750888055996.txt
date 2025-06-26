@@ -1,0 +1,38 @@
+==> Cloning from https://github.com/beruus2003/agend-sistem
+==> Checking out commit d57b12f09a1e311da6eabf6563e3a3938c513802 in branch main
+==> Using Node.js version 22.16.0 (default)
+==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+==> Using Bun version 1.1.0 (default)
+==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+==> Running build command 'npm install && npm run build'...
+added 550 packages, and audited 551 packages in 55s
+76 packages are looking for funding
+  run `npm fund` for details
+5 moderate severity vulnerabilities
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+Run `npm audit` for details.
+> barbershop-management@1.0.0 build
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+vite v5.4.19 building for production...
+transforming...
+✓ 3 modules transformed.
+x Build failed in 326ms
+error during build:
+[vite:css] [postcss] Cannot find module '@tailwindcss/typography'
+Require stack:
+- /opt/render/project/src/tailwind.config.ts
+file: /opt/render/project/src/client/src/index.css:undefined:NaN
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at Function.resolve (node:internal/modules/helpers:145:19)
+    at _resolve (/opt/render/project/src/node_modules/tailwindcss/node_modules/jiti/dist/jiti.js:1:246378)
+    at jiti (/opt/render/project/src/node_modules/tailwindcss/node_modules/jiti/dist/jiti.js:1:249092)
+    at /opt/render/project/src/tailwind.config.ts:89:45
+    at evalModule (/opt/render/project/src/node_modules/tailwindcss/node_modules/jiti/dist/jiti.js:1:251913)
+    at jiti (/opt/render/project/src/node_modules/tailwindcss/node_modules/jiti/dist/jiti.js:1:249841)
+    at /opt/render/project/src/node_modules/tailwindcss/lib/lib/load-config.js:52:26
+    at loadConfig (/opt/render/project/src/node_modules/tailwindcss/lib/lib/load-config.js:62:6)
+    at getTailwindConfig (/opt/render/project/src/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:71:116)
+==> Build failed 😞
+==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+Need better w
