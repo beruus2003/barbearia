@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: barbershop-management
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: barbershop-db
+          property: connectionString
+    autoDeploy: false
+
+databases:
+  - name: barbershop-db
+    databaseName: barbershop
+    user: barbershop_user
+    plan: free
